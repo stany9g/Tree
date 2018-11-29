@@ -17,5 +17,29 @@ namespace Tree
             LeftChild = leftChild;
             RightChild = rightChild;
         }
+
+
+        public IEnumerator<int> GetEnumerator()
+        {
+            if (LeftChild != null)
+            {
+                foreach (var v in LeftChild)
+                {
+                    yield return v;
+                }
+            }
+
+            yield return Value;
+
+            if (RightChild != null)
+            {
+                foreach (var v in RightChild)
+                {
+                    yield return v;
+                }
+            }
+        }
+
+
     }
 }

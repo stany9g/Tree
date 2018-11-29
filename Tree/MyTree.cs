@@ -118,5 +118,12 @@ namespace Tree
         {
             return _root;
         }
+
+        public IEnumerator<int> GetEnumerator()
+        {
+            if (_root == null)
+                throw new InvalidOperationException();
+            return _root.GetEnumerator();
+        }
     }
 }

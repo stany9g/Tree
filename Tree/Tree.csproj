@@ -44,7 +44,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BSTree.cs" />
-    <Compile Include="MyEnumerator.cs" />
     <Compile Include="MyTree.cs" />
     <Compile Include="Node.cs" />
     <Compile Include="Program.cs" />

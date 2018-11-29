@@ -18,6 +18,8 @@ namespace Tree
             }
             tree.Delete(8);
 
+            
+
             Console.Write("test");
         }
     }
